@@ -1,0 +1,10 @@
+{
+  "eslint.autoFixOnSave": true,
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "editor.rulers": [100],
+  "markdownlint.config": {
+    "no-inline-html": false,
+    "no-bare-urls": false
+  }
+}

@@ -1,0 +1,86 @@
+parserOptions:
+  ecmaVersion: 2019
+env:
+  commonjs: true
+  es6: true
+  node: true
+globals:
+  Service: true
+extends: 
+  - "eslint:recommended"
+  - prettier
+plugins:
+  - prettier
+rules:
+  prettier/prettier: error
+  no-dupe-keys: error
+  no-dupe-args: error
+  use-isnan: error
+  valid-typeof: error
+  curly: error
+  default-case: error
+  eqeqeq:
+    - error
+    - allow-null
+  guard-for-in: warn
+  no-else-return: warn
+  no-fallthrough: error
+  no-floating-decimal: warn
+  no-multi-str: error
+  no-octal: error
+  no-octal-escape: error
+  no-redeclare: error
+  no-with: error
+  no-void: error
+  radix: error
+  strict:
+    - error
+    - never
+  no-delete-var: error
+  max-params:
+    - warn
+    - 6
+  new-cap:
+    - error
+    - newIsCap: true
+      capIsNew: false
+      properties: true
+  no-array-constructor: error
+  operator-linebreak: off
+  constructor-super: error
+  no-const-assign: error
+  no-dupe-class-members: error
+  no-this-before-super: error
+  no-var: error
+  no-unused-vars:
+    - error
+    - vars: local
+      varsIgnorePattern: ^_
+      args: none
+      ignoreRestSiblings: true
+  no-use-before-define:
+    - error
+    - functions: false
+      classes: false
+      variables: false
+  prefer-arrow-callback: warn
+  prefer-const: 
+    - warn
+    - destructuring: all
+  prefer-rest-params: warn
+  prefer-spread: warn
+  prefer-template: warn
+  valid-jsdoc: off
+  no-global-assign: error
+  no-unsafe-negation: error
+  require-yield: off
+  no-warning-comments:
+    - warn
+    - location: start
+      terms:
+        - todo
+        - fixme
+        - xxx
+        - hack
+        - review
+  no-console: error
